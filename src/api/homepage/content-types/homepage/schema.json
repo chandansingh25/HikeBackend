@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BannerSubHeading": {
+      "type": "string",
+      "required": true,
+      "default": "Guide With",
+      "maxLength": 25
+    },
+    "BannerMainHeading": {
+      "type": "string",
+      "required": true
+    },
+    "BannerDescription": {
+      "type": "text",
+      "required": true
+    },
+    "BannerImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "ExpertSectionHeading": {
+      "type": "string",
+      "required": true
+    },
+    "ExpertSubHeading": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_language_language_spokens",
+  "info": {
+    "displayName": "LanguageSpoken",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Add": {
+      "type": "string"
+    }
+  }
+}

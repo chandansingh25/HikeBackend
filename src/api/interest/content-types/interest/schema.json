@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interests",
+  "info": {
+    "singularName": "interest",
+    "pluralName": "interests",
+    "displayName": "Interest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Add": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie.categorie",
+      "inversedBy": "interests"
+    },
+    "experts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::expert.expert",
+      "mappedBy": "interest"
+    }
+  }
+}

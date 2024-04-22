@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_education_educations",
+  "info": {
+    "displayName": "Education",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Add": {
+      "type": "string"
+    }
+  }
+}

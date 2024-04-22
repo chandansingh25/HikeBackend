@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experts",
+  "info": {
+    "singularName": "expert",
+    "pluralName": "experts",
+    "displayName": "Expert",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "ProfilePhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Experience": {
+      "type": "integer"
+    },
+    "Verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "WorkingAt": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "interest": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::interest.interest",
+      "inversedBy": "experts"
+    },
+    "About": {
+      "type": "text"
+    },
+    "WorkingAt_Name": {
+      "type": "string"
+    },
+    "Education": {
+      "displayName": "Education",
+      "type": "component",
+      "repeatable": true,
+      "component": "education.education"
+    },
+    "LanguageSpoken": {
+      "displayName": "LanguageSpoken",
+      "type": "component",
+      "repeatable": true,
+      "component": "language.language-spoken"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "expert"
+    }
+  }
+}
